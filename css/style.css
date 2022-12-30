@@ -1,0 +1,115 @@
+.hidden {
+  display: none;
+}
+body {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  background-color: #464646;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.top {
+  height: 10%;
+  padding: 3%;
+}
+#weather {
+  display: flex;
+  align-items: center;
+}
+.weather-main {
+  width: 50%;
+}
+.weather-main div:first-child {
+  width: 50%;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.weather-main div:last-child {
+  width: 50%;
+  font-size: 1em;
+  font-weight: bold;
+}
+.weather-temp {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 0.8em;
+}
+.center-gap {
+  display: flex;
+  height: 5%;
+}
+.center-mid {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  padding: 3%;
+}
+#clock {
+  font-size: 9em;
+  font-weight: bold;
+  text-align: center;
+  height: 80%;
+  padding: 40px;
+}
+#greeting {
+  text-align: center;
+  font-size: 2em;
+  height: auto;
+  padding: 10px;
+}
+.center-bottom {
+  flex-direction: column;
+  height: 15%;
+}
+#todo-form,
+#login-form {
+  width: 100%;
+  text-align: center;
+}
+#todo-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+::placeholder {
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 1.2em;
+  width: 100%;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+  font-weight: bold;
+  padding: 0;
+}
+#SI {
+  /*로그인, 투두리스트 input*/
+  background-color: transparent;
+  border: transparent;
+  font-size: large;
+  color: whitesmoke;
+}
+button {
+  background-color: transparent;
+  border-color: transparent;
+}
+#quote {    /*유빈님가르침 감사합니다.*/
+  position: fixed;
+  bottom : 20px
+}

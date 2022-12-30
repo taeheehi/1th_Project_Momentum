@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--CSS파일을 여는 것이 아니라 그 CSS파일을 HTML 파일에서 불러오는 것.-->
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Momentum</title>
+  </head>
+  <body>
+    <!--위치 : TOP 에 날씨 기능 -->
+    <div class="top">
+      <!--날씨-->
+      <div id="weather">
+        <div class="weather-main">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="weather-temp">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <!--위치 : Center-mid 에 로그인, 시계 기능 -->
+    <div class="center-mid">
+      <!--로그인  (폼>인풋 + 버튼)-->
+
+      <div id="clock">00:00:00</div>
+      <div class="hidden" id="greeting"></div>
+
+      <form class="hidden" id="login-form">
+        <input
+          id="SI"
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+      </form>
+    </div>
+    <!--시계, 환영인사-->
+
+    <!--위치 : Center-gap 에 빈공간 -->
+    <div class="center-gap"></div>
+
+    <!--위치 : Center-bottom 에 투두리스트 기능 -->
+    <div class="center-bottom">
+      <!--투두리스트-->
+      <form id="todo-form">
+        <input
+          id="SI"
+          required
+          autocomplete="off"
+          type="text"
+          placeholder="What's your main focus"
+        />
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+
+    <!--위치 : bottom 에 명언 기능 -->
+    <div class="bottom">
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!--//자바스크립트에서 이미지를 만들고 이걸 html에 추가-->
+    <script src="./js/greetings.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/weather.js"></script>
+    <!--ㄴindex.html에서도 "js/quotes.js"를 import하도록 하였다.-->
+  </body>
+</html>
